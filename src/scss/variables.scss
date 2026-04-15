@@ -1,0 +1,113 @@
+/* _variables.scss */
+
+/* ========== Paleta base — Cadbury ========== */
+$color-primary-dark:         #2a1452;   // Morado oscuro profundo
+$color-primary:              #5d3b8c;   // Morado base
+$color-accent-gold:          #d4af37;   // Dorado elegante
+$color-white:                #ffffff;   // Blanco neutro
+$color-primary-deep-dark:    #1a0f30;   // Casi negro morado
+$color-brown:                #5a3825;   // Marrón cálido
+$color-secondary-purple:     #381874;   // Morado secundario
+$color-light-red:            #ff6347;   // Rojo claro
+$color-firebrick:            #b22222;   // Rojo firebrick
+$color-teal:                 #147c7c;   // Verde azulado
+$color-dark-yellow:          #ceba4d;   // Amarillo oscuro
+$color-pale-pink:            #a16699;   // Rosa pálido
+
+/* ========== Colores para alertas y feedback ========== */
+$alert-success:              #5fcaa7;
+$alert-info:                 #6dc8da;
+$alert-warning:              #f2b774;
+$alert-danger:               #e67f88;
+
+/* ========== Sombras ========== */
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.15);
+$shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+/* ========== Opacidades y overlays ========== */
+$overlay-bg: rgba(42, 20, 82, 0.8);
+
+/* ========== Paletas por modo ========== */
+/* Modo Oscuro */
+$dark-theme: (
+  background:  linear-gradient(180deg, $color-primary-deep-dark, $color-primary-dark, $color-brown),
+  card-bg:     rgba(58, 38, 103, 0.9),
+  border-color:$color-primary,
+  text-color:  $color-white,
+  text-muted:  #a29eb6,
+);
+
+/* Modo Claro */
+$light-theme: (
+  background:  linear-gradient(90deg, rgba(93, 59, 140, 0.25) 0%, rgba(212, 175, 55, 0.1) 100%),
+  card-bg:     #f7f5fb,
+  border-color:$color-primary,
+  text-color:  $color-primary-dark,
+  text-muted:  #5d3b8c,
+);
+
+/* Encabezados en modo oscuro */
+.theme-dark h1 {
+  color: $color-accent-gold;
+}
+
+.theme-dark h2 {
+  color: $color-white;
+}
+
+.theme-dark h3 {
+  color: $color-white;
+}
+
+/* Encabezados en modo claro */
+.theme-light h1 {
+  color: $color-primary-deep-dark;
+}
+
+.theme-light h2 {
+  color: $color-primary-dark;
+}
+
+.theme-light h3 {
+  color: $color-primary-dark;
+}
+/* ========== Navbar ========== */
+$navbar-bg:           $color-primary !default;
+$navbar-text:         $color-white   !default;
+$navbar-hover:        $color-accent-gold !default;
+$navbar-height:       60px !default;
+$navbar-padding-y:    1.2rem !default;
+$navbar-padding-x:    2rem !default;
+$navbar-font-size:    1rem !default;
+$navbar-z-index:      1000 !default;
+$navbar-shadow:       0 2px 6px rgba(0, 0, 0, 0.15) !default;
+
+/* ========== Footer (NUEVO) ========== */
+$footer-bg:           $color-primary-dark !default;
+$footer-text:         $color-white        !default;
+$footer-link-hover:   $color-accent-gold  !default;
+$footer-border-top:   1px solid rgba($color-white, .15) !default;
+
+$footer-padding-y:    2.5rem !default;
+$footer-padding-x:    2rem  !default;
+$footer-font-size:    .95rem !default;
+
+/* Breakpoints (Responsive Design) */
+$breakpoint-xs: 480px  !default;  // Teléfonos pequeños
+$breakpoint-sm: 768px  !default;  // Teléfonos grandes / tablets
+$breakpoint-md: 992px  !default;  // Laptops
+$breakpoint-lg: 1200px !default;  // Pantallas grandes
+
+/* ========== Espaciados ========== */
+$spacer-0: 0px;
+$spacer-1: 5px;
+$spacer-2: 10px;
+$spacer-3: 15px;
+$spacer-4: 20px;
+$spacer-5: 25px;
+$spacer-6: 30px;
+$spacer-7: 35px;
+$spacer-8: 40px;
+$spacer-9: 45px;
+$spacer-10: 50px;

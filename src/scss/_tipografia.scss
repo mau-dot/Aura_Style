@@ -1,0 +1,138 @@
+@use '../base/variables';
+@use '../base/fonts';
+
+/* _typography.scss */
+
+/* Tipografías */
+$font-primary: 'Cormorant Garamond', serif;  
+$font-secondary: 'Lato', sans-serif;         
+
+/* Tamaños de fuentes */
+$font-size-10: 10px;
+$font-size-12: 12px;
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-20: 20px;
+$font-size-22: 22px;
+$font-size-24: 24px;
+$font-size-26: 26px;
+$font-size-28: 28px;
+$font-size-30: 30px;
+$font-size-32: 32px;
+$font-size-34: 34px;
+$font-size-36: 36px;
+$font-size-38: 38px;
+$font-size-40: 40px;
+$font-size-42: 42px;
+$font-size-44: 44px;
+$font-size-46: 46px;
+$font-size-48: 48px;
+$font-size-50: 50px;
+
+/* Pesos de fuentes */
+$font-weight-light: 300;    // Ligero
+$font-weight-regular: 400;  // Regular
+$font-weight-semibold: 600; // Semibold
+$font-weight-bold: 700;     // Negrita
+
+/* Colores de texto */
+$text-color-primary-dark: variables.$color-primary-dark;
+$text-color-primary: variables.$color-primary;
+$text-color-accent-gold: variables.$color-accent-gold;
+$text-color-white: variables.$color-white;
+$text-color-primary-deep-dark: variables.$color-primary-deep-dark;
+$text-color-brown: variables.$color-brown;
+$text-color-success: variables.$alert-success;
+$text-color-info: variables.$alert-info;
+$text-color-warning: variables.$alert-warning;
+$text-color-danger: variables.$alert-danger;
+
+/* Fuentes */
+
+.ff-1{
+    font-family: $font-primary;
+}
+
+.ff-2{
+    font-family: $font-secondary;
+}
+
+/*Clases para los tamaños del texto*/
+.fs-10{
+    font-size: $font-size-10;
+}
+.fs-12{
+    font-size: $font-size-12;
+}
+.fs-14{
+    font-size: $font-size-14;
+}
+.fs-16{
+    font-size: $font-size-16;
+}
+.fs-18{
+    font-size: $font-size-18;
+}
+.fs-20{
+    font-size: $font-size-20;
+}
+.fs-22{
+    font-size: $font-size-22;
+}
+.fs-24{
+    font-size: $font-size-24;
+}
+.fs-26{
+    font-size: $font-size-26;
+}
+.fs-28{
+    font-size: $font-size-28;
+}
+.fs-30{
+    font-size: $font-size-30;
+}
+.fs-32{
+    font-size: $font-size-32;
+}
+.fs-34{
+    font-size: $font-size-34;
+}
+.fs-36{
+    font-size: $font-size-36;
+}
+.fs-38{
+    font-size: $font-size-38;
+}
+.fs-40{
+    font-size: $font-size-40;
+}
+.fs-42{
+    font-size: $font-size-42;
+}
+.fs-44{
+    font-size: $font-size-44;
+}
+.fs-46{
+    font-size: $font-size-46;
+}
+.fs-48{
+    font-size: $font-size-48;
+}
+.fs-50{
+    font-size: $font-size-50;
+}
+
+/*Clases para los pesos de la fuente*/
+.fw-light{
+    font-weight: $font-weight-light;
+}
+.fw-regular{
+    font-weight: $font-weight-regular;
+}
+.fw-semibold{
+    font-weight: $font-weight-semibold;
+}
+.fw-bold{
+    font-weight: $font-weight-bold;
+}

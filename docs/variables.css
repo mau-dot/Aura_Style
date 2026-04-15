@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* _variables.scss */
+/* ========== Paleta base — Cadbury ========== */
+/* ========== Colores para alertas y feedback ========== */
+/* ========== Sombras ========== */
+/* ========== Opacidades y overlays ========== */
+/* ========== Paletas por modo ========== */
+/* Modo Oscuro */
+/* Modo Claro */
+/* Encabezados en modo oscuro */
+.theme-dark h1 {
+  color: #d4af37;
+}
+
+.theme-dark h2 {
+  color: #ffffff;
+}
+
+.theme-dark h3 {
+  color: #ffffff;
+}
+
+/* Encabezados en modo claro */
+.theme-light h1 {
+  color: #1a0f30;
+}
+
+.theme-light h2 {
+  color: #2a1452;
+}
+
+.theme-light h3 {
+  color: #2a1452;
+}
+
+/* ========== Navbar ========== */
+/* ========== Footer (NUEVO) ========== */
+/* Breakpoints (Responsive Design) */
+/* ========== Espaciados ========== *//*# sourceMappingURL=variables.css.map */
