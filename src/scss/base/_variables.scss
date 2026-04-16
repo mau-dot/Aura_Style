@@ -1,18 +1,33 @@
 /* _variables.scss */
 
-/* ========== Paleta base — Cadbury ========== */
-$color-primary-dark:         #2a1452;   // Morado oscuro profundo
-$color-primary:              #5d3b8c;   // Morado base
-$color-accent-gold:          #d4af37;   // Dorado elegante
-$color-white:                #ffffff;   // Blanco neutro
-$color-primary-deep-dark:    #1a0f30;   // Casi negro morado
-$color-brown:                #5a3825;   // Marrón cálido
-$color-secondary-purple:     #381874;   // Morado secundario
-$color-light-red:            #ff6347;   // Rojo claro
-$color-firebrick:            #b22222;   // Rojo firebrick
-$color-teal:                 #147c7c;   // Verde azulado
-$color-dark-yellow:          #ceba4d;   // Amarillo oscuro
-$color-pale-pink:            #a16699;   // Rosa pálido
+/*===============Paleta tonos claros=====================*/
+$color-primary-sand:         #fad4b2;   // arena palido
+$color-primary:              #FFFFFF;   // Blanco Puro
+$color-accent-gold:          #d4af37;   // Dorado elegante               
+$color-blue:                 #0074D9;   // azul
+$color-ligth-blue:           #7FDBFF;   // azul claro
+$color-pale-blue:            #E0F7FF;   // azul palido
+$color-green:                #2ECC40;   // verde claro energia
+$color-green-neon:           #7FFF00;   // verde pastel
+$color-secondary:            #CCFFCC;   // verde palido
+$color-cream:                #FFF3E0;   // crema
+$color-calid-yellow:         #FFCC66;   // amarillo calido
+$color-sand:                 #F4A460;   // arena
+
+/*==============Paleta tonos oscuros====================*/
+
+$color-primary:              #0D0D0D;   //negro
+$color-primary-dark:         #1A1A1A;   // oscuro
+$color-red-dark:             #2B0000;   // rojo oscuro
+$color-red:                  #8B0000;   // rojo 
+$color-blue-space:           #001F3F;   // azul negro
+$color-dark-blue:            #003366;   // azul oscuro
+$color-dark-green:           #013220;   // verde negro
+$color-green:                #0B6623;   // verde oscuro
+$color-dark-gray:            #2C2C2C;   // gris oscuro
+$color-blue-black:           #111827;   // azul negro
+$color-light-gray:           #696969;   // gris claro
+$color-light-red:            #e02323;   // rojo 
 
 /* ========== Colores para alertas y feedback ========== */
 $alert-success:              #5fcaa7;
