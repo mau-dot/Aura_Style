@@ -1,0 +1,37 @@
+@use '../base/variables' as v;
+
+/* Requisito 2.2: Sistema de Layout (Grid System) */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+// Generador de columnas básicas (Mobile First)
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        flex: 0 0 calc(100% / 12 * $i);
+        max-width: calc(100% / 12 * $i);
+        padding: 15px;
+    }
+}
+
+// Soporte para Diseño Responsivo mediante Breakpoints (Requisito 2.2)
+@media (min-width: v.$breakpoint-sm) {
+    @for $i from 1 through 12 {
+        .col-md-#{$i} {
+            flex: 0 0 calc(100% / 12 * $i);
+            max-width: calc(100% / 12 * $i);
+        }
+    }
+}
+
+@media (min-width: v.$breakpoint-md) {
+    @for $i from 1 through 12 {
+        .col-lg-#{$i} {
+            flex: 0 0 calc(100% / 12 * $i);
+            max-width: calc(100% / 12 * $i);
+        }
+    }
+}

@@ -1,0 +1,50 @@
+/* src/scss/components/_navbar.scss */
+@use '../base/variables' as v;
+
+.navbar {
+    /* CAMBIO AQUÍ: Antes era $color-primary-dark */
+    background-color: v.$dark-primary-alt; 
+    padding: v.$navbar-padding-y 0;
+    
+    &-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        /* CAMBIO AQUÍ: Antes era $color-accent-gold */
+        color: v.$light-accent-gold; 
+    }
+
+    &-links {
+        display: none; // Oculto en móvil para diseño Mobile First [cite: 14]
+        gap: 1.5rem;
+        
+        a {
+            /* CAMBIO AQUÍ: Antes era $color-white */
+            color: v.$light-primary; 
+            text-decoration: none;
+            &:hover { color: v.$light-accent-gold; }
+        }
+    }
+
+    &-checkbox { display: none; }
+    &-checkbox:checked ~ .navbar-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: v.$navbar-height;
+        left: 0;
+        width: 100%;
+        background: v.$dark-primary-alt;
+        padding: 1rem;
+    }
+
+    @media (min-width: v.$breakpoint-sm) { // Soporte para Breakpoints [cite: 30]
+        &-links { display: flex; }
+        &-toggle { display: none; }
+    }
+}

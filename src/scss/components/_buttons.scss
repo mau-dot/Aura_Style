@@ -1,0 +1,54 @@
+/* Requisito 2.3: Librería de Componentes UI - Botones */
+@use 'sass:color'; // Necesario para usar color.adjust y evitar advertencias
+@use '../base/variables' as v;
+
+.ds-btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    font-family: inherit;
+
+    // Tamaños (Requisito 2.3: Mínimo 3 tamaños) [cite: 33]
+    &--sm { padding: 0.3rem 0.6rem; font-size: 0.8rem; }
+    &--md { padding: 0.6rem 1.2rem; font-size: 1rem; }
+    &--lg { padding: 0.9rem 1.8rem; font-size: 1.2rem; }
+
+    &-primary {
+        background-color: v.$light-accent-gold;
+        color: v.$dark-primary;
+        // Se cambió lighten() por color.adjust para eliminar advertencias
+        &:hover { background-color: color.adjust(v.$light-accent-gold, $lightness: 10%); }
+        &:active { transform: scale(0.98); } // Estado active solicitado 
+    }
+
+    &-secondary {
+        background-color: v.$light-blue;
+        color: v.$light-primary;
+        &:hover { background-color: color.adjust(v.$light-blue, $lightness: 10%); }
+    }
+
+    &-warning {
+        background-color: v.$alert-warning;
+        color: v.$dark-primary;
+    }
+
+    &-square-dark {
+        background-color: v.$dark-primary-alt;
+        color: v.$light-accent-gold;
+        border: 1px solid v.$light-accent-gold;
+        &:hover { 
+            background-color: v.$light-accent-gold; 
+            color: v.$dark-primary-alt; 
+        }
+    }
+
+    // Estado deshabilitado (Requisito 2.3) 
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+}

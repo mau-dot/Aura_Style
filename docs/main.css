@@ -1,0 +1,1186 @@
+@charset "UTF-8";
+/* main.scss - El Corazón de AuraStyle */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Lato:wght@400;700&display=swap");
+/* _variables.scss */
+/*=============== Paleta Tonos Claros (Light) =====================*/
+/*============== Paleta Tonos Oscuros (Dark) ====================*/
+/* ========== Colores para alertas y feedback ========== */
+/* ========== Sombras ========== */
+/* ========== Opacidades y overlays ========== */
+/* ========== Paletas por modo ========== */
+/* Modo Oscuro */
+/* Modo Claro */
+/* Encabezados en modo oscuro */
+.theme-dark h1 {
+  color: #d4af37;
+}
+
+.theme-dark h2 {
+  color: #FFFFFF;
+}
+
+.theme-dark h3 {
+  color: #FFFFFF;
+}
+
+/* Encabezados en modo claro */
+.theme-light h1 {
+  color: #0D0D0D;
+}
+
+.theme-light h2 {
+  color: #1A1A1A;
+}
+
+.theme-light h3 {
+  color: #1A1A1A;
+}
+
+/* ========== Navbar ========== */ /* !default: Asigna este valor a la variable solo si no ha sido definida antes */
+/* ========== Footer ========== */
+/* Breakpoints */
+/* ========== Espaciados (Formato de Mapa para Automatización) ========== */
+/* _reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Box model y espaciados */
+/* Espaciado global */
+/* Radio de bordes global */
+/* Ancho de bordes global */
+/* Z-index base */
+/* Z-index para el encabezado */
+/* Z-index para modales */
+/* Z-index para notificaciones */
+/* main.scss - El Corazón de AuraStyle */
+/* _typography.scss */
+/* Tipografías */
+/* Pesos de fuentes */
+/* Colores de texto - Vinculados a tu paleta corregida */
+/* Clases de Familias de Fuente */
+.ff-1 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.ff-2 {
+  font-family: "Lato", sans-serif;
+}
+
+/* REQUISITO 2.5: ARQUITECTURA SASS - BUCLE DINÁMICO
+   Genera automáticamente clases desde .fs-1 hasta .fs-100
+*/
+.fs-1 {
+  font-size: 1px !important;
+}
+
+.fs-2 {
+  font-size: 2px !important;
+}
+
+.fs-3 {
+  font-size: 3px !important;
+}
+
+.fs-4 {
+  font-size: 4px !important;
+}
+
+.fs-5 {
+  font-size: 5px !important;
+}
+
+.fs-6 {
+  font-size: 6px !important;
+}
+
+.fs-7 {
+  font-size: 7px !important;
+}
+
+.fs-8 {
+  font-size: 8px !important;
+}
+
+.fs-9 {
+  font-size: 9px !important;
+}
+
+.fs-10 {
+  font-size: 10px !important;
+}
+
+.fs-11 {
+  font-size: 11px !important;
+}
+
+.fs-12 {
+  font-size: 12px !important;
+}
+
+.fs-13 {
+  font-size: 13px !important;
+}
+
+.fs-14 {
+  font-size: 14px !important;
+}
+
+.fs-15 {
+  font-size: 15px !important;
+}
+
+.fs-16 {
+  font-size: 16px !important;
+}
+
+.fs-17 {
+  font-size: 17px !important;
+}
+
+.fs-18 {
+  font-size: 18px !important;
+}
+
+.fs-19 {
+  font-size: 19px !important;
+}
+
+.fs-20 {
+  font-size: 20px !important;
+}
+
+.fs-21 {
+  font-size: 21px !important;
+}
+
+.fs-22 {
+  font-size: 22px !important;
+}
+
+.fs-23 {
+  font-size: 23px !important;
+}
+
+.fs-24 {
+  font-size: 24px !important;
+}
+
+.fs-25 {
+  font-size: 25px !important;
+}
+
+.fs-26 {
+  font-size: 26px !important;
+}
+
+.fs-27 {
+  font-size: 27px !important;
+}
+
+.fs-28 {
+  font-size: 28px !important;
+}
+
+.fs-29 {
+  font-size: 29px !important;
+}
+
+.fs-30 {
+  font-size: 30px !important;
+}
+
+.fs-31 {
+  font-size: 31px !important;
+}
+
+.fs-32 {
+  font-size: 32px !important;
+}
+
+.fs-33 {
+  font-size: 33px !important;
+}
+
+.fs-34 {
+  font-size: 34px !important;
+}
+
+.fs-35 {
+  font-size: 35px !important;
+}
+
+.fs-36 {
+  font-size: 36px !important;
+}
+
+.fs-37 {
+  font-size: 37px !important;
+}
+
+.fs-38 {
+  font-size: 38px !important;
+}
+
+.fs-39 {
+  font-size: 39px !important;
+}
+
+.fs-40 {
+  font-size: 40px !important;
+}
+
+.fs-41 {
+  font-size: 41px !important;
+}
+
+.fs-42 {
+  font-size: 42px !important;
+}
+
+.fs-43 {
+  font-size: 43px !important;
+}
+
+.fs-44 {
+  font-size: 44px !important;
+}
+
+.fs-45 {
+  font-size: 45px !important;
+}
+
+.fs-46 {
+  font-size: 46px !important;
+}
+
+.fs-47 {
+  font-size: 47px !important;
+}
+
+.fs-48 {
+  font-size: 48px !important;
+}
+
+.fs-49 {
+  font-size: 49px !important;
+}
+
+.fs-50 {
+  font-size: 50px !important;
+}
+
+.fs-51 {
+  font-size: 51px !important;
+}
+
+.fs-52 {
+  font-size: 52px !important;
+}
+
+.fs-53 {
+  font-size: 53px !important;
+}
+
+.fs-54 {
+  font-size: 54px !important;
+}
+
+.fs-55 {
+  font-size: 55px !important;
+}
+
+.fs-56 {
+  font-size: 56px !important;
+}
+
+.fs-57 {
+  font-size: 57px !important;
+}
+
+.fs-58 {
+  font-size: 58px !important;
+}
+
+.fs-59 {
+  font-size: 59px !important;
+}
+
+.fs-60 {
+  font-size: 60px !important;
+}
+
+.fs-61 {
+  font-size: 61px !important;
+}
+
+.fs-62 {
+  font-size: 62px !important;
+}
+
+.fs-63 {
+  font-size: 63px !important;
+}
+
+.fs-64 {
+  font-size: 64px !important;
+}
+
+.fs-65 {
+  font-size: 65px !important;
+}
+
+.fs-66 {
+  font-size: 66px !important;
+}
+
+.fs-67 {
+  font-size: 67px !important;
+}
+
+.fs-68 {
+  font-size: 68px !important;
+}
+
+.fs-69 {
+  font-size: 69px !important;
+}
+
+.fs-70 {
+  font-size: 70px !important;
+}
+
+.fs-71 {
+  font-size: 71px !important;
+}
+
+.fs-72 {
+  font-size: 72px !important;
+}
+
+.fs-73 {
+  font-size: 73px !important;
+}
+
+.fs-74 {
+  font-size: 74px !important;
+}
+
+.fs-75 {
+  font-size: 75px !important;
+}
+
+.fs-76 {
+  font-size: 76px !important;
+}
+
+.fs-77 {
+  font-size: 77px !important;
+}
+
+.fs-78 {
+  font-size: 78px !important;
+}
+
+.fs-79 {
+  font-size: 79px !important;
+}
+
+.fs-80 {
+  font-size: 80px !important;
+}
+
+.fs-81 {
+  font-size: 81px !important;
+}
+
+.fs-82 {
+  font-size: 82px !important;
+}
+
+.fs-83 {
+  font-size: 83px !important;
+}
+
+.fs-84 {
+  font-size: 84px !important;
+}
+
+.fs-85 {
+  font-size: 85px !important;
+}
+
+.fs-86 {
+  font-size: 86px !important;
+}
+
+.fs-87 {
+  font-size: 87px !important;
+}
+
+.fs-88 {
+  font-size: 88px !important;
+}
+
+.fs-89 {
+  font-size: 89px !important;
+}
+
+.fs-90 {
+  font-size: 90px !important;
+}
+
+.fs-91 {
+  font-size: 91px !important;
+}
+
+.fs-92 {
+  font-size: 92px !important;
+}
+
+.fs-93 {
+  font-size: 93px !important;
+}
+
+.fs-94 {
+  font-size: 94px !important;
+}
+
+.fs-95 {
+  font-size: 95px !important;
+}
+
+.fs-96 {
+  font-size: 96px !important;
+}
+
+.fs-97 {
+  font-size: 97px !important;
+}
+
+.fs-98 {
+  font-size: 98px !important;
+}
+
+.fs-99 {
+  font-size: 99px !important;
+}
+
+.fs-100 {
+  font-size: 100px !important;
+}
+
+/* Clases para los pesos de la fuente */
+.fw-light {
+  font-weight: 300 !important;
+}
+
+.fw-regular {
+  font-weight: 400 !important;
+}
+
+.fw-semibold {
+  font-weight: 600 !important;
+}
+
+.fw-bold {
+  font-weight: 700 !important;
+}
+
+/* Clases de colores de texto (Requisito 2.4 - Utilidades) */
+.text-color-accent-gold {
+  color: #d4af37 !important;
+}
+
+.text-color-primary-sand {
+  color: #fad4b2 !important;
+}
+
+.text-color-sand {
+  color: #F4A460 !important;
+}
+
+.text-color-white {
+  color: #FFFFFF !important;
+}
+
+.text-color-blue {
+  color: #0074D9 !important;
+}
+
+.text-color-danger {
+  color: #e67f88 !important;
+}
+
+/* Alineación de texto */
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+/* main.scss - El Corazón de AuraStyle */
+/* Requisito 2.2: Sistema de Layout (Grid System) */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-1 {
+  flex: 0 0 8.3333333333%;
+  max-width: 8.3333333333%;
+  padding: 15px;
+}
+
+.col-2 {
+  flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%;
+  padding: 15px;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 15px;
+}
+
+.col-4 {
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+  padding: 15px;
+}
+
+.col-5 {
+  flex: 0 0 41.6666666667%;
+  max-width: 41.6666666667%;
+  padding: 15px;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 15px;
+}
+
+.col-7 {
+  flex: 0 0 58.3333333333%;
+  max-width: 58.3333333333%;
+  padding: 15px;
+}
+
+.col-8 {
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%;
+  padding: 15px;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+  padding: 15px;
+}
+
+.col-10 {
+  flex: 0 0 83.3333333333%;
+  max-width: 83.3333333333%;
+  padding: 15px;
+}
+
+.col-11 {
+  flex: 0 0 91.6666666667%;
+  max-width: 91.6666666667%;
+  padding: 15px;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  .col-md-1 {
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+  .col-md-2 {
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-md-4 {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+  .col-md-5 {
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-md-7 {
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+  .col-md-8 {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+  .col-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .col-md-10 {
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+  .col-md-11 {
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+  .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-1 {
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+  .col-lg-2 {
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-lg-4 {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+  .col-lg-5 {
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+  .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-lg-7 {
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+  .col-lg-8 {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+  .col-lg-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .col-lg-10 {
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+  .col-lg-11 {
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+  .col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+/* main.scss - El Corazón de AuraStyle */
+/* src/scss/components/_navbar.scss */
+.navbar {
+  /* CAMBIO AQUÍ: Antes era $color-primary-dark */
+  background-color: #1A1A1A;
+  padding: 1.2rem 0;
+}
+.navbar-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  /* CAMBIO AQUÍ: Antes era $color-accent-gold */
+  color: #d4af37;
+}
+.navbar-links {
+  display: none;
+  gap: 1.5rem;
+}
+.navbar-links a {
+  /* CAMBIO AQUÍ: Antes era $color-white */
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.navbar-links a:hover {
+  color: #d4af37;
+}
+.navbar-checkbox {
+  display: none;
+}
+.navbar-checkbox:checked ~ .navbar-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: #1A1A1A;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .navbar-links {
+    display: flex;
+  }
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+/* main.scss - El Corazón de AuraStyle */
+/* Requisito 2.3: Librería de Componentes UI - Botones */
+.ds-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  font-family: inherit;
+}
+.ds-btn--sm {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+}
+.ds-btn--md {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+}
+.ds-btn--lg {
+  padding: 0.9rem 1.8rem;
+  font-size: 1.2rem;
+}
+.ds-btn-primary {
+  background-color: #d4af37;
+  color: #0D0D0D;
+}
+.ds-btn-primary:hover {
+  background-color: rgb(221.024691358, 191.7901234568, 96.975308642);
+}
+.ds-btn-primary:active {
+  transform: scale(0.98);
+}
+.ds-btn-secondary {
+  background-color: #0074D9;
+  color: #FFFFFF;
+}
+.ds-btn-secondary:hover {
+  background-color: rgb(13, 142.3640552995, 255);
+}
+.ds-btn-warning {
+  background-color: #f2b774;
+  color: #0D0D0D;
+}
+.ds-btn-square-dark {
+  background-color: #1A1A1A;
+  color: #d4af37;
+  border: 1px solid #d4af37;
+}
+.ds-btn-square-dark:hover {
+  background-color: #d4af37;
+  color: #1A1A1A;
+}
+.ds-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* main.scss - El Corazón de AuraStyle */
+.m-0 {
+  margin: 0px !important;
+}
+
+.mt-0 {
+  margin-top: 0px !important;
+}
+
+.mb-0 {
+  margin-bottom: 0px !important;
+}
+
+.p-0 {
+  padding: 0px !important;
+}
+
+.pt-0 {
+  padding-top: 0px !important;
+}
+
+.pb-0 {
+  padding-bottom: 0px !important;
+}
+
+.py-0 {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.m-1 {
+  margin: 5px !important;
+}
+
+.mt-1 {
+  margin-top: 5px !important;
+}
+
+.mb-1 {
+  margin-bottom: 5px !important;
+}
+
+.p-1 {
+  padding: 5px !important;
+}
+
+.pt-1 {
+  padding-top: 5px !important;
+}
+
+.pb-1 {
+  padding-bottom: 5px !important;
+}
+
+.py-1 {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.m-2 {
+  margin: 10px !important;
+}
+
+.mt-2 {
+  margin-top: 10px !important;
+}
+
+.mb-2 {
+  margin-bottom: 10px !important;
+}
+
+.p-2 {
+  padding: 10px !important;
+}
+
+.pt-2 {
+  padding-top: 10px !important;
+}
+
+.pb-2 {
+  padding-bottom: 10px !important;
+}
+
+.py-2 {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.m-3 {
+  margin: 15px !important;
+}
+
+.mt-3 {
+  margin-top: 15px !important;
+}
+
+.mb-3 {
+  margin-bottom: 15px !important;
+}
+
+.p-3 {
+  padding: 15px !important;
+}
+
+.pt-3 {
+  padding-top: 15px !important;
+}
+
+.pb-3 {
+  padding-bottom: 15px !important;
+}
+
+.py-3 {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+.m-4 {
+  margin: 20px !important;
+}
+
+.mt-4 {
+  margin-top: 20px !important;
+}
+
+.mb-4 {
+  margin-bottom: 20px !important;
+}
+
+.p-4 {
+  padding: 20px !important;
+}
+
+.pt-4 {
+  padding-top: 20px !important;
+}
+
+.pb-4 {
+  padding-bottom: 20px !important;
+}
+
+.py-4 {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+.m-5 {
+  margin: 25px !important;
+}
+
+.mt-5 {
+  margin-top: 25px !important;
+}
+
+.mb-5 {
+  margin-bottom: 25px !important;
+}
+
+.p-5 {
+  padding: 25px !important;
+}
+
+.pt-5 {
+  padding-top: 25px !important;
+}
+
+.pb-5 {
+  padding-bottom: 25px !important;
+}
+
+.py-5 {
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+}
+
+.m-6 {
+  margin: 30px !important;
+}
+
+.mt-6 {
+  margin-top: 30px !important;
+}
+
+.mb-6 {
+  margin-bottom: 30px !important;
+}
+
+.p-6 {
+  padding: 30px !important;
+}
+
+.pt-6 {
+  padding-top: 30px !important;
+}
+
+.pb-6 {
+  padding-bottom: 30px !important;
+}
+
+.py-6 {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.m-7 {
+  margin: 35px !important;
+}
+
+.mt-7 {
+  margin-top: 35px !important;
+}
+
+.mb-7 {
+  margin-bottom: 35px !important;
+}
+
+.p-7 {
+  padding: 35px !important;
+}
+
+.pt-7 {
+  padding-top: 35px !important;
+}
+
+.pb-7 {
+  padding-bottom: 35px !important;
+}
+
+.py-7 {
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
+}
+
+.m-8 {
+  margin: 40px !important;
+}
+
+.mt-8 {
+  margin-top: 40px !important;
+}
+
+.mb-8 {
+  margin-bottom: 40px !important;
+}
+
+.p-8 {
+  padding: 40px !important;
+}
+
+.pt-8 {
+  padding-top: 40px !important;
+}
+
+.pb-8 {
+  padding-bottom: 40px !important;
+}
+
+.py-8 {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+
+.m-9 {
+  margin: 45px !important;
+}
+
+.mt-9 {
+  margin-top: 45px !important;
+}
+
+.mb-9 {
+  margin-bottom: 45px !important;
+}
+
+.p-9 {
+  padding: 45px !important;
+}
+
+.pt-9 {
+  padding-top: 45px !important;
+}
+
+.pb-9 {
+  padding-bottom: 45px !important;
+}
+
+.py-9 {
+  padding-top: 45px !important;
+  padding-bottom: 45px !important;
+}
+
+.m-10 {
+  margin: 50px !important;
+}
+
+.mt-10 {
+  margin-top: 50px !important;
+}
+
+.mb-10 {
+  margin-bottom: 50px !important;
+}
+
+.p-10 {
+  padding: 50px !important;
+}
+
+.pt-10 {
+  padding-top: 50px !important;
+}
+
+.pb-10 {
+  padding-bottom: 50px !important;
+}
+
+.py-10 {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+
+/*# sourceMappingURL=main.css.map */

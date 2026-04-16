@@ -1,33 +1,32 @@
 /* _variables.scss */
 
-/*===============Paleta tonos claros=====================*/
-$color-primary-sand:         #fad4b2;   // arena palido
-$color-primary:              #FFFFFF;   // Blanco Puro
-$color-accent-gold:          #d4af37;   // Dorado elegante               
-$color-blue:                 #0074D9;   // azul
-$color-ligth-blue:           #7FDBFF;   // azul claro
-$color-pale-blue:            #E0F7FF;   // azul palido
-$color-green:                #2ECC40;   // verde claro energia
-$color-green-neon:           #7FFF00;   // verde pastel
-$color-secondary:            #CCFFCC;   // verde palido
-$color-cream:                #FFF3E0;   // crema
-$color-calid-yellow:         #FFCC66;   // amarillo calido
-$color-sand:                 #F4A460;   // arena
+/*=============== Paleta Tonos Claros (Light) =====================*/
+$light-primary-sand:    #fad4b2;   
+$light-primary:         #FFFFFF;   
+$light-accent-gold:     #d4af37;   
+$light-blue:            #0074D9;   
+$light-blue-bright:     #7FDBFF;   
+$light-pale-blue:       #E0F7FF;   
+$light-green:           #2ECC40;   
+$light-green-neon:      #7FFF00;   
+$light-secondary:       #CCFFCC;   
+$light-cream:           #FFF3E0;   
+$light-calid-yellow:    #FFCC66;   
+$light-sand:            #F4A460;   
 
-/*==============Paleta tonos oscuros====================*/
-
-$color-primary:              #0D0D0D;   //negro
-$color-primary-dark:         #1A1A1A;   // oscuro
-$color-red-dark:             #2B0000;   // rojo oscuro
-$color-red:                  #8B0000;   // rojo 
-$color-blue-space:           #001F3F;   // azul negro
-$color-dark-blue:            #003366;   // azul oscuro
-$color-dark-green:           #013220;   // verde negro
-$color-green:                #0B6623;   // verde oscuro
-$color-dark-gray:            #2C2C2C;   // gris oscuro
-$color-blue-black:           #111827;   // azul negro
-$color-light-gray:           #696969;   // gris claro
-$color-light-red:            #e02323;   // rojo 
+/*============== Paleta Tonos Oscuros (Dark) ====================*/
+$dark-primary:          #0D0D0D;   
+$dark-primary-alt:      #1A1A1A;   
+$dark-red-deep:         #2B0000;   
+$dark-red:              #8B0000;   
+$dark-blue-space:       #001F3F;   
+$dark-blue-deep:        #003366;   
+$dark-green-deep:       #013220;   
+$dark-green:            #0B6623;   
+$dark-gray-deep:        #2C2C2C;   
+$dark-blue-black:       #111827;   
+$dark-gray-light:       #696969;   
+$dark-red-light:        #e02323;   
 
 /* ========== Colores para alertas y feedback ========== */
 $alert-success:              #5fcaa7;
@@ -46,10 +45,11 @@ $overlay-bg: rgba(42, 20, 82, 0.8);
 /* ========== Paletas por modo ========== */
 /* Modo Oscuro */
 $dark-theme: (
-  background:  linear-gradient(180deg, $color-primary-deep-dark, $color-primary-dark, $color-brown),
+  // He ajustado estos nombres para que coincidan con tus nuevas variables oscuras
+  background:  linear-gradient(180deg, $dark-blue-space, $dark-primary, $dark-primary-alt),
   card-bg:     rgba(58, 38, 103, 0.9),
-  border-color:$color-primary,
-  text-color:  $color-white,
+  border-color: $dark-primary-alt,
+  text-color:  $light-primary,
   text-muted:  #a29eb6,
 );
 
@@ -57,40 +57,25 @@ $dark-theme: (
 $light-theme: (
   background:  linear-gradient(90deg, rgba(93, 59, 140, 0.25) 0%, rgba(212, 175, 55, 0.1) 100%),
   card-bg:     #f7f5fb,
-  border-color:$color-primary,
-  text-color:  $color-primary-dark,
+  border-color: $light-primary-sand,
+  text-color:  $dark-primary-alt,
   text-muted:  #5d3b8c,
 );
 
 /* Encabezados en modo oscuro */
-.theme-dark h1 {
-  color: $color-accent-gold;
-}
-
-.theme-dark h2 {
-  color: $color-white;
-}
-
-.theme-dark h3 {
-  color: $color-white;
-}
+.theme-dark h1 { color: $light-accent-gold; }
+.theme-dark h2 { color: $light-primary; }
+.theme-dark h3 { color: $light-primary; }
 
 /* Encabezados en modo claro */
-.theme-light h1 {
-  color: $color-primary-deep-dark;
-}
+.theme-light h1 { color: $dark-primary; }
+.theme-light h2 { color: $dark-primary-alt; }
+.theme-light h3 { color: $dark-primary-alt; }
 
-.theme-light h2 {
-  color: $color-primary-dark;
-}
-
-.theme-light h3 {
-  color: $color-primary-dark;
-}
-/* ========== Navbar ========== */
-$navbar-bg:           $color-primary !default;
-$navbar-text:         $color-white   !default;
-$navbar-hover:        $color-accent-gold !default;
+/* ========== Navbar ========== */     /* !default: Asigna este valor a la variable solo si no ha sido definida antes */
+$navbar-bg:           $dark-primary !default;
+$navbar-text:         $light-primary !default;
+$navbar-hover:        $light-accent-gold !default;
 $navbar-height:       60px !default;
 $navbar-padding-y:    1.2rem !default;
 $navbar-padding-x:    2rem !default;
@@ -98,31 +83,32 @@ $navbar-font-size:    1rem !default;
 $navbar-z-index:      1000 !default;
 $navbar-shadow:       0 2px 6px rgba(0, 0, 0, 0.15) !default;
 
-/* ========== Footer (NUEVO) ========== */
-$footer-bg:           $color-primary-dark !default;
-$footer-text:         $color-white        !default;
-$footer-link-hover:   $color-accent-gold  !default;
-$footer-border-top:   1px solid rgba($color-white, .15) !default;
-
+/* ========== Footer ========== */
+$footer-bg:           $dark-primary-alt !default;
+$footer-text:         $light-primary !default;
+$footer-link-hover:   $light-accent-gold !default;
+$footer-border-top:   1px solid rgba($light-primary, .15) !default;
 $footer-padding-y:    2.5rem !default;
-$footer-padding-x:    2rem  !default;
+$footer-padding-x:    2rem !default;
 $footer-font-size:    .95rem !default;
 
-/* Breakpoints (Responsive Design) */
-$breakpoint-xs: 480px  !default;  // Teléfonos pequeños
-$breakpoint-sm: 768px  !default;  // Teléfonos grandes / tablets
-$breakpoint-md: 992px  !default;  // Laptops
-$breakpoint-lg: 1200px !default;  // Pantallas grandes
+/* Breakpoints */
+$breakpoint-xs: 480px !default;
+$breakpoint-sm: 768px !default;
+$breakpoint-md: 992px !default;
+$breakpoint-lg: 1200px !default;
 
-/* ========== Espaciados ========== */
-$spacer-0: 0px;
-$spacer-1: 5px;
-$spacer-2: 10px;
-$spacer-3: 15px;
-$spacer-4: 20px;
-$spacer-5: 25px;
-$spacer-6: 30px;
-$spacer-7: 35px;
-$spacer-8: 40px;
-$spacer-9: 45px;
-$spacer-10: 50px;
+/* ========== Espaciados (Formato de Mapa para Automatización) ========== */
+$spacers: (
+  "0": 0px,
+  "1": 5px,
+  "2": 10px,
+  "3": 15px,
+  "4": 20px,
+  "5": 25px,
+  "6": 30px,
+  "7": 35px,
+  "8": 40px,
+  "9": 45px,
+  "10": 50px
+);
