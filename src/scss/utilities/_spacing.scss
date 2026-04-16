@@ -1,19 +1,14 @@
-@use '/src/scss/base/variables' as v
+@use '../base/variables' as v;
 
-/*Prefijos para mt, mb, ms, me pt, pb, ps, pe:
-t = top
-b = bottom
-s = start (left)
-e = end (right)
-Clases para los márgenes y paddings*/
-
-//Margins
-.m-0{
-    margin: v.$spacer-0;
-}
-.m-1{
-    margin: v.$spacer-1;
-}
-.m-2{
-    margin: v.$spacer-2;
+@each $key, $value in v.$spacers {
+    .m-#{$key} { margin: $value !important; }
+    .mt-#{$key} { margin-top: $value !important; }
+    .mb-#{$key} { margin-bottom: $value !important; }
+    .p-#{$key} { padding: $value !important; }
+    .pt-#{$key} { padding-top: $value !important; }
+    .pb-#{$key} { padding-bottom: $value !important; }
+    .py-#{$key} { 
+        padding-top: $value !important; 
+        padding-bottom: $value !important; 
+    }
 }

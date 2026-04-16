@@ -1,0 +1,20 @@
+/* main.scss - El Corazón de AuraStyle */
+
+// 1. Configuraciones (Sin estas, nada funciona)
+@use 'base/variables' as v;
+@use 'base/reset';
+@use 'base/tipografia';
+
+// 2. Layout (Sistema de rejillas y contenedores)
+@use 'layout/container';
+@use 'layout/grid';
+
+// 3. Componentes (Tus clases Jedi)
+@use 'components/navbar';
+@use 'components/buttons';
+@use 'components/cards';
+
+// 4. Utilidades (Para maquetado rápido)
+@use 'utilities/spacing';
+@use 'utilities/flexbox';
+@use 'utilities/colors';
